@@ -1,0 +1,62 @@
+#banner, 
+#results, 
+#action { 
+	color: white;
+	background-color: #800000;
+	text-shadow: 3px 3px 5px black;
+}
+
+h1 {
+	font-size: 60px;
+	font-style: italic;
+	margin: 0px;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+#banner {
+	margin: 10px 0px;
+	border: 10px 0px;
+	max-height: 200px;
+}
+
+#box {
+	padding: 0px;
+	margin-bottom: 1%;
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: 372.5px;
+}
+
+#results {
+	margin-bottom: 0px;
+}
+
+#resultBox {
+	min-height: 530px;
+	max-height: 530px;
+}
+
+#body {
+	padding-bottom: 0px;
+}
+
+#movieTitle {
+	font-weight: bold;
+	font-size: 15px;
+	min-height: 75px;
+	max-height: 100px;
+	margin-bottom: 10px;
+}
+
+#detailsPoster {
+	display: block;
+	margin: auto;
+}

@@ -1,0 +1,25 @@
+<!-- detail state -->
+<h1>{{detail.movie}}</h1>
+<body ng-controller= "DetailController as detail" class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading lead text-center"><p>{{detail.detailsData.data.Title}}</p><a ui-sref="search">Return To Main Page</a></div>
+	        <div class="panel-body">
+				<div>
+					<!-- details displayed for movie -->
+					<img src="{{detail.detailsData.data.Poster}}"  id="detailsPoster">
+					<p><b>Title</b>: {{detail.detailsData.data.Title}}</p>
+					<p><b>Rating</b>: {{detail.detailsData.data.Rated}}</p>
+					<p><b>Genre</b>: {{detail.detailsData.data.Genre}}</p>
+					<p><b>Awards</b>: {{detail.detailsData.data.Awards}}</p>
+					<p><b>Director</b>: {{detail.detailsData.data.Director}}</p>
+					<p><b>Rating</b>: {{detail.detailsData.data.Metascore}} / 100</p>
+					<p><b>Synopsis</b>: {{detail.detailsData.data.Plot}}</p>
+					<p><b>Release Date</b>: {{detail.detailsData.data.Released}}</p>
+					<p><b>Runtime</b>: {{detail.detailsData.data.Runtime}}</p>
+					<p><b>Actors</b>: {{detail.detailsData.data.Actors}}</p>
+				</div>         
+	        </div>
+   	</div>	
+</body>
+<!-- link back to main state -->
+<a ui-sref="search">Return to main page</a>

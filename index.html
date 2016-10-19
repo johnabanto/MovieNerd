@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Movie Nerd</title>
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+	<link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="bower_components/toastr/toastr.css" />
+	<!-- endbower -->
+
+	<!-- inject:css -->
+	<link rel="stylesheet" href="/app/styles/styles.css">
+	<!-- endinject -->
+</head>
+
+<body>
+	<!-- header area for title -->
+    <div class="container-fluid">
+        <div class="jumbotron" id="banner">
+			<header>
+            	<h1>M O V I E</h1><h1 class="text-right">N E R D</h1>
+            </header>
+        </div>
+        <!-- states show here -->
+        <div ui-view>
+        </div>
+    </div>
+
+	<!-- bower:js -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/toastr/toastr.js"></script>
+	<!-- endbower -->
+
+	<!-- inject:js -->
+	<script src="/app/app.js"></script>
+	<script src="/app/movie.controller.js"></script>
+	<script src="/app/movie.detail.controller.js"></script>
+	<script src="/app/movie.service.js"></script>
+	<!-- endinject -->
+</body>
+</html>

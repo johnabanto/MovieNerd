@@ -1,0 +1,27 @@
+<!-- search state -->
+<body ng-controller= "SearchController as search" class="container">
+    <div class="input-group input-group-lg">
+        <input ng-model="search.movie" class="form-control" type="text" placeholder="Enter Movie Title">
+        <span class="input-group-btn"><button ng-click="search.inputResults(search.movie)" class="btn btn-secondary btn-block" type="button" id="action">Action!</button></span>
+    </div>
+    <br>
+    <!-- panel that displays search results -->
+    <div class="panel panel-default">
+        <div class="panel-heading lead text-center" id="results">Search Results: {{search.searchInput.title}}</div>
+        <div class="panel-body" id="body">
+			<div class="row">
+				<div class="panel panel-default col-xs-4" ng-repeat="x in search.movieData.data.Search" id="box">
+		        	<div class="panel-heading lead text-center" id="movieTitle">{{x.Title}}</div>
+			        	<div class="panel-body text-center" id="resultBox">
+				        	<img src="{{x.Poster}}">
+				        	<br>
+				            <!-- link back to main state -->
+				            <div>
+				            <a ui-sref="detail({imdbID: x.imdbID})">Go To Detail Page</a>
+				            </div>
+				        </div>    
+		        </div>
+		    </div>        
+        </div>
+    </div>
+</body>
