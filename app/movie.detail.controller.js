@@ -22,5 +22,7 @@
                     function(error) {});
                 };
                 vm.detailResults();
-        }   
+        }          
 })();
+
+// Reviewed by Reuven, Tristan and Jesse

@@ -19,8 +19,11 @@
                 MovieFactory.getMovieData(movies).then(
                 function(data) {
                     vm.movieData = data;
+                    console.log(data);
                 },
                 function(error) {});
             };
         }
 })();
+
+// Reviewed by Reuven, Tristan and Jesse
